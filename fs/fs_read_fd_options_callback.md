@@ -8,15 +8,14 @@ changes:
 -->
 * `fd` {integer}
 * `options` {Object}
-  * `buffer` {Buffer|TypedArray|DataView} **Default:** `Buffer.alloc(16384)`
-  * `offset` {integer} **Default:** `0`
-  * `length` {integer} **Default:** `buffer.length`
-  * `position` {integer} **Default:** `null`
+  * `buffer` {Buffer|TypedArray|DataView} **默认值:** `Buffer.alloc(16384)`
+  * `offset` {integer} **默认值:** `0`
+  * `length` {integer} **默认值:** `buffer.length`
+  * `position` {integer} **默认值:** `null`
 * `callback` {Function}
   * `err` {Error}
   * `bytesRead` {integer}
   * `buffer` {Buffer}
 
-Similar to the above `fs.read` function, this version takes an optional `options` object.
-If no `options` object is specified, it will default with the above values.
+与上述fs.read函数类似，此版本带有一个可选的options对象。 如果未指定options对象，则使用使用上述默认值。
 
